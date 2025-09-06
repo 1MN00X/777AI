@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>777AI PHOTO</title>
+
+<!-- Favicon -->
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/favicon-32.png" type="image/png">
+
+<!-- PWA Manifest -->
+<link rel="manifest" href="assets/site.webmanifest">
+
+<!-- CSS & Upscaler JS -->
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/upscaler/dist/upscaler.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <img src="assets/logo.png" alt="Logo" class="logo">
+    <h1>777AI PHOTO</h1>
+  </div>
+  <p class="subtitle">Jernihkan & HD-kan foto burik dengan AI, preview efek sebelum simpan!</p>
+  
+  <input type="file" id="imageInput" accept="image/*">
+
+  <div class="effects-container">
+    <h3>Pilih Efek:</h3>
+    <div id="effectsList"></div>
+  </div>
+
+  <div class="buttons">
+    <button id="processBtn">✨ Terapkan Efek & HD ✨</button>
+    <button id="downloadBtn">💾 Download Hasil</button>
+  </div>
+
+  <p id="status"></p>
+  <canvas id="outputCanvas"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
